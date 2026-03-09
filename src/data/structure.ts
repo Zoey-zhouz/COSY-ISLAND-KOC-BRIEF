@@ -96,7 +96,7 @@ export const YT_STRUCTURE_CONTENT = {
         { url: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772780667/Stable_heels_-_the_moderate_heel_height_and_subtly_flared_heel_bubbpm.mp4", id: "@koolkelsey", title: "Stable heels - the moderate heel height and subtly flared heel" },
         { url: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772780671/Textured_rubber_sole_rm24r3.mp4", id: "@amalovesbeauty", title: "Textured rubber sole" },
         { url: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772780672/Adjustable_strap_no_heel_slips_krostt.mp4", id: "@amalovesbeauty", title: "Adjustable strap, no heel slips" },
-        { url: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772780667/Stable_heels_-_the_moderate_heel_height_and_subtly_flared_heel_bubbpm.mp4", id: "@koolkelsey", title: "TRY ON - Easy to take on/off" },
+        { url: "https://res.cloudinary.com/dw8q6wrts/video/upload/v1773024415/TRY_ON-Easy_to_take_on_mc80tq.mp4", id: "@koolkelsey", title: "TRY ON - Easy to take on/off" },
         { url: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772781207/dancing_iycwcn.mp4", id: "@brosiaaa", title: "TRY ON - Stability during Walk/jumps/dancing" }
       ] 
     },
