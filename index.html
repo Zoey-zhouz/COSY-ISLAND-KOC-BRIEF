@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COSY ISLAND | Influencer Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                primary: '#6F3736',
+                secondary: '#DB8A81',
+                bg: '#F7F5F4',
+                dark: '#2A1A1A',
+                taupe: '#E7DED9',
+                beige: '#EDECE8',
+                white: '#FCFCFC',
+              }
+            },
+            fontFamily: {
+              sans: ['Tenor Sans', 'sans-serif'],
+              serif: ['Tenor Sans', 'serif'],
+              brand: ['Tenor Sans', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+        
+        body {
+            font-family: 'Tenor Sans', sans-serif;
+            background-color: #F7F5F4;
+            color: #2A1A1A;
+            scroll-behavior: smooth;
+        }
+
+        .font-brand {
+            font-family: 'Tenor Sans', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .animate-slide-up {
+            animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: #F7F5F4; }
+        ::-webkit-scrollbar-thumb { background: #E7DED9; border-radius: 8px; }
+
+        /* Unified Card Style Classes */
+        .card-standard {
+            background-color: #FCFCFC;
+            border: 1px solid rgba(111, 55, 54, 0.05);
+            border-radius: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        .card-standard:hover {
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+            border-color: rgba(111, 55, 54, 0.1);
+        }
+        .card-image-wrapper {
+            aspect-ratio: 4/5;
+            position: relative;
+            overflow: hidden;
+            background-color: #F7F5F4;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.39.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

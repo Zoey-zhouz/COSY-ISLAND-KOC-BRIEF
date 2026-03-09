@@ -1,0 +1,7 @@
+{
+  "name": "KOL Brief ",
+  "description": "A professional portal for brands to host product briefs and for influencers (KOLs) to discover and explore collaboration opportunities.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
