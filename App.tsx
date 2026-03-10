@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import Header from './components/Header';
 import GlobalNav from './components/GlobalNav';
 import SectionRequirement from './components/sections/SectionRequirement';
@@ -422,9 +423,11 @@ const App: React.FC = () => {
             <span className="text-[10px] font-black uppercase tracking-widest text-brand-secondary">{Math.round(progress)}%</span>
           </div>
           <div className="w-full h-1.5 bg-brand-primary/5 rounded-full overflow-hidden">
-            <div 
-              className="h-full bg-brand-secondary transition-all duration-500"
-              style={{ width: `${progress}%` }}
+            <motion.div 
+              className="h-full bg-brand-secondary"
+              initial={{ width: 0 }}
+              animate={{ width: `${progress}%` }}
+              transition={{ duration: 0.5 }}
             />
           </div>
         </div>
@@ -447,12 +450,14 @@ const App: React.FC = () => {
       )}
 
       <main className="pb-48">
-        <div
+        <motion.div
           key={activeSection}
-          className="animate-slide-up"
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
         >
           {renderSection()}
-        </div>
+        </motion.div>
       </main>
 
       {renderProgressBar()}
