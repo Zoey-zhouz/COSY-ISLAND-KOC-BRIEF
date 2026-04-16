@@ -72,7 +72,7 @@ export interface StructureStep {
     types: {
       title: string;
       desc: string;
-      icon: string;
+      icon?: string;
       image?: string;
       examples?: string[];
       videoExamples?: string[];
@@ -91,7 +91,7 @@ export interface CampaignData {
   id: string;
   heroImage: string;
   description: string;
-  requirement: RequirementData;
+  requirement?: RequirementData;
   products: ProductFeature[];
   structure: {
     intro: string;

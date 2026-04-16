@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
 import Header from './components/Header';
 import GlobalNav from './components/GlobalNav';
 import SectionRequirement from './components/sections/SectionRequirement';
@@ -54,7 +53,8 @@ const App: React.FC = () => {
       if (platform === 'YT') {
         navigateTo('ytType');
       } else {
-        navigateTo('campaignType');
+        // Skip campaignType (Select Collaboration Theme) and go directly to products
+        navigateTo('products');
       }
     } else {
       setShowDashboardPopup(true);
@@ -77,7 +77,7 @@ const App: React.FC = () => {
     // --- CODE LOCATION: PRODUCT ICON DEFINITION ---
     // The product icon is defined in the 'sections' array below under the 'products' id.
     const sections = [
-      { id: 'requirement', label: labels.rules, icon: <Icons.ClipboardList />, desc: 'Requirements, DOs & DONTs' },
+      ...(currentData.requirement ? [{ id: 'requirement', label: labels.rules, icon: <Icons.ClipboardList />, desc: 'Requirements, DOs & DONTs' }] : []),
       { 
         id: 'products', 
         label: labels.choice, 
@@ -165,7 +165,7 @@ const App: React.FC = () => {
         }
         return <SectionRequirement data={currentData.requirement} platform={selectedPlatform || 'IG'} ytType={selectedYTType} isMultiColor={activeSeason === 'SS26'} structureReminders={currentData.structure} labels={labels} isOnboarding={isOnboarding} onBack={() => navigateTo(isOnboarding ? (selectedPlatform === 'YT' ? 'ytType' : 'campaignType') : 'dashboard')} onNext={() => navigateTo('products')} />;
       case 'products': 
-        return <SectionProducts products={currentData.products} isMultiColor={activeSeason === 'SS26'} labels={labels} platform={selectedPlatform || 'IG'} isOnboarding={isOnboarding} onBack={() => navigateTo(isOnboarding ? 'requirement' : 'dashboard')} onNavigate={navigateTo} onNextStep={() => navigateTo('structure')} />;
+        return <SectionProducts products={currentData.products} isMultiColor={activeSeason === 'SS26'} labels={labels} platform={selectedPlatform || 'IG'} isOnboarding={isOnboarding} onBack={() => navigateTo(isOnboarding ? (currentData.requirement ? 'requirement' : (selectedPlatform === 'IG' ? 'platform' : 'campaignType')) : 'dashboard')} onNavigate={navigateTo} onNextStep={() => navigateTo('structure')} />;
       case 'structure': 
         return <SectionStructure data={currentData.structure} labels={labels} platform={selectedPlatform || 'IG'} isOnboarding={isOnboarding} onBack={() => navigateTo(isOnboarding ? 'products' : 'dashboard')} onNext={() => navigateTo('media')} />;
       case 'media':
@@ -327,13 +327,13 @@ const App: React.FC = () => {
             <h1 className="text-6xl font-serif text-brand-primary mb-16 tracking-tighter">Select Collaboration Theme</h1>
             <div className="flex flex-col md:flex-row gap-8 justify-center">
               <button 
-                onClick={() => { setActiveSeason('SS25'); navigateTo(isOnboarding ? 'requirement' : 'dashboard'); }}
+                onClick={() => { setActiveSeason('SS25'); navigateTo(isOnboarding ? (currentData.requirement ? 'requirement' : 'products') : 'dashboard'); }}
                 className="flex-1 bg-brand-white p-12 border-2 border-brand-primary/10 hover:border-brand-primary transition-all rounded-none"
               >
                 <p className="font-black uppercase tracking-widest text-brand-primary">{content.singleColor.label}</p>
               </button>
               <button 
-                onClick={() => { setActiveSeason('SS26'); navigateTo(isOnboarding ? 'requirement' : 'dashboard'); }}
+                onClick={() => { setActiveSeason('SS26'); navigateTo(isOnboarding ? (currentData.requirement ? 'requirement' : 'products') : 'dashboard'); }}
                 className="flex-1 bg-brand-white p-12 border-2 border-brand-primary/10 hover:border-brand-primary transition-all rounded-none"
               >
                 <p className="font-black uppercase tracking-widest text-brand-primary">{content.multiColor.label}</p>
@@ -354,7 +354,7 @@ const App: React.FC = () => {
       
       default: return (
         <div className="animate-slide-up">
-          <div className="w-full relative h-[50vh] md:h-[60vh] overflow-hidden bg-brand-dark">
+          <div className="w-full relative h-[50vh] md:h-[60vh] overflow-hidden bg-brand-dark flex items-center justify-center">
             <img src={currentData.heroImage} className="absolute inset-0 w-full h-full object-cover opacity-50" alt="COSY ISLAND" />
             <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent"></div>
             
@@ -368,14 +368,14 @@ const App: React.FC = () => {
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-6">
               <h1 className="text-4xl md:text-8xl font-black font-brand text-white mb-4 md:mb-8 tracking-[0.15em] drop-shadow-2xl">COSY ISLAND</h1>
               <p className="text-white/80 max-w-4xl mx-auto text-base md:text-xl font-light italic leading-relaxed">
-                "We aspire to create a cosy island for your feet."
+                "We aspire to create a COSY ISLAND for your feet."
               </p>
             </div>
           </div>
 
           {/* Action Buttons Below Hero */}
-          <div className="bg-brand-white py-16 md:py-24 px-6">
-            <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-8 md:gap-12 items-center justify-center">
+          <div className="bg-brand-white py-6 md:py-10 px-6">
+            <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-4 md:gap-6 items-center justify-center">
               <button 
                 onClick={startOnboarding}
                 className="w-full md:w-[400px] bg-brand-primary text-white px-12 py-8 rounded-none font-black uppercase tracking-[0.3em] text-sm md:text-base hover:bg-brand-secondary transition-all transform hover:-translate-y-1 shadow-2xl border border-brand-primary/20 flex items-center justify-center gap-4 group"
@@ -400,8 +400,8 @@ const App: React.FC = () => {
 
     const steps = [
       'platform',
-      'campaignType',
-      'requirement',
+      ...(selectedPlatform === 'IG' ? [] : ['campaignType']),
+      ...(currentData.requirement ? ['requirement'] : []),
       'products',
       'structure',
       'media',
@@ -423,11 +423,9 @@ const App: React.FC = () => {
             <span className="text-[10px] font-black uppercase tracking-widest text-brand-secondary">{Math.round(progress)}%</span>
           </div>
           <div className="w-full h-1.5 bg-brand-primary/5 rounded-full overflow-hidden">
-            <motion.div 
-              className="h-full bg-brand-secondary"
-              initial={{ width: 0 }}
-              animate={{ width: `${progress}%` }}
-              transition={{ duration: 0.5 }}
+            <div 
+              className="h-full bg-brand-secondary transition-all duration-500"
+              style={{ width: `${progress}%` }}
             />
           </div>
         </div>
@@ -449,15 +447,13 @@ const App: React.FC = () => {
         )
       )}
 
-      <main className="pb-48">
-        <motion.div
+      <main className={activeSection === 'home' ? '' : 'pb-48'}>
+        <div
           key={activeSection}
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="animate-slide-up"
         >
           {renderSection()}
-        </motion.div>
+        </div>
       </main>
 
       {renderProgressBar()}

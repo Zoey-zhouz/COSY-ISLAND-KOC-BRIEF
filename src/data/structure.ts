@@ -46,23 +46,19 @@ export const YT_STRUCTURE_CONTENT = {
         types: [
           {
             title: "Occasion-Based",
-            desc: "Commuting, Date Nights/Parties, Everyday Outings, weddings, Church...\n“I walk at least 5,000 steps a day just going to and from work. I need heels that move with me, not slow me down.”",
-            icon: "fa-calendar-check"
+            desc: "Commuting, Date Nights/Parties, Everyday Outings, weddings, Church...\n\n“I walk at least 5,000 steps a day just going to and from work. I need heels that move with me, not slow me down.”"
           },
           {
             title: "Roles & Lifestyles",
-            desc: "Busy Mom, Student/Professional, Travel Lover...\n“Chasing toddlers in heels sounds crazy - unless the heels are this comfortable.”",
-            icon: "fa-user-tag"
+            desc: "Busy Mom, Student/Professional, Travel Lover...\n\n“Chasing toddlers in heels sounds crazy - unless the heels are this comfortable.”"
           },
           {
             title: "Foot Pain",
-            desc: "Injuries, flat feet, bunions, bone issues, hammertoes...\n“I have flat feet and mild bunions - so most heels either rub the wrong way or leave me aching by midday.”",
-            icon: "fa-pills"
+            desc: "Injuries, flat feet, bunions, bone issues, hammertoes...\n\n“I have flat feet and mild bunions - so most heels either rub the wrong way or leave me aching by midday.”"
           },
           {
             title: "Seasonal Needs",
-            desc: "“Hot weather and heels usually don’t mix - sweaty feet, slippery soles, and zero breathability.”",
-            icon: "fa-sun"
+            desc: "“Hot weather and heels usually don’t mix - sweaty feet, slippery soles, and zero breathability.”"
           }
         ]
       },
@@ -130,10 +126,12 @@ export const STRUCTURE_CONTENT = {
       desc: "Catch attention in 3-5s. A hook is crucial for performance and platform algorithms.", 
       examples: [
         { url: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772612922/_moriahhgrace__2025-08-20T151106.000Z_yeuqbq.mp4", id: "@moriahhgrace", title: "1. Theme Hook" },
-        { url: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772613296/Text_-HOOK_mzclaj.mp4", id: "@mariesbazaar", title: "2. Text Hook" },
-        { url: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772612920/_ninuki19__2025-08-05T172320.000Z_jygosn.mp4", id: "@lashify", title: "3. Pattern interrupt Hook" },
+        { url: "https://res.cloudinary.com/dw8q6wrts/video/upload/v1773392017/HOOK_TEXT2_chicaintraining__2026-03-10T074555.000Z_kzzpe5.mp4", id: "@chicaintraining", title: "2. Text Hook" },
+        { url: "https://res.cloudinary.com/dw8q6wrts/video/upload/v1773307664/HOOK-3_lashify__2025-05-13T224432.000Z_fsmmkh.mp4", id: "@lashify", title: "3. Pattern interrupt Hook" },
         { url: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605341/Brief-%20total/HOOK/Hook-Creative-3_melvelinalmonte_rf7y5b.mp4", id: "@melvelinalmonte", title: "4. Trend Hook" },
-        { url: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772786164/HOOK_%E5%A4%9A%E8%89%B2_tanyakotyakova__2026-01-20T162420.000Z_spamyo.mp4", id: "@tanyakotyakova", title: "5. Multi-color Hook" }
+        { url: "https://res.cloudinary.com/dw8q6wrts/video/upload/v1773390290/HOOK_%E5%A4%9A%E8%89%B2_lindsayhignett__2026-03-06T150204.000Z_by1ql8.mp4", id: "@lindsayhignett", title: "5. Multi-color Hook" },
+        { url: "https://res.cloudinary.com/dw8q6wrts/video/upload/v1773298789/HOOK-6_deb_panache__2026-03-03T063747.000Z_bvhbny.mp4", id: "@deb_panache", title: "6. Different angle hook" },
+        { url: "https://res.cloudinary.com/dw8q6wrts/video/upload/v1773024432/Bring_it_into_real_life-1-_mother.woman.queen_cipk2p.mp4", id: "@mother.woman.queen", title: "7. Professional identity hook" }
       ],
       hookIntro: {
         intro: "A hook is used in the first 3-5 seconds of your video to grab and retain viewer attention, signaling to the platform’s algorithm that your content is high quality. A strong hook is crucial for performance.",
@@ -176,6 +174,15 @@ export const STRUCTURE_CONTENT = {
               "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605341/Brief-%20total/HOOK/Hook-Creative-3_melvelinalmonte_rf7y5b.mp4"
             ],
             author: "@mariesbazaar"
+          },
+          {
+            title: "Scenario & Professional Identity Hook",
+            desc: "Specific professional women's recommendations are highly effective for us, as 80% of our customers are professional women. Highlighting real-life scenarios and professional identities builds strong trust and resonance.",
+            icon: "fa-user-tie",
+            videoExamples: [
+              "https://res.cloudinary.com/dw8q6wrts/video/upload/v1773024432/Bring_it_into_real_life-1-_mother.woman.queen_cipk2p.mp4"
+            ],
+            author: "@mother.woman.queen"
           }
         ]
       }
@@ -190,17 +197,11 @@ export const STRUCTURE_CONTENT = {
       ] 
     },
     { 
-      title: "Feature Showcase", 
-      desc: "Showcase 1-2 product features that solve the issues you mention in the hook.", 
+      title: "✦ Feature Showcase ✦", 
+      desc: "This key selling point must be clearly highlighted in your content.", 
       examples: [
-        { url: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605366/Brief-%20total/feature%20showcase/2_5._Feature_Showcase-1_kenzii_04_rjqh7t.mp4", id: "@kenzii_04", title: "Soft and comfy uppers and soles" },
         { url: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605367/Brief-%20total/feature%20showcase/2_5._Feature_Showcase-2_naty_vau_rlhbyj.mp4", id: "@naty_vau", title: "Ergonomic & arch support cushion" },
-        { url: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605366/Brief-%20total/feature%20showcase/2_5._Feature_Showcase-3_deliriarose_hlxufs.mp4", id: "@deliriarose", title: "Stable heels for steady steps" },
-        { url: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605366/Brief-%20total/feature%20showcase/2_5._Feature_Showcase-4_emily.e.young_rotdyw.mp4", id: "@emily.e.young", title: "Slingback straps that stay put" },
-        { url: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605367/Brief-%20total/feature%20showcase/2_5._Feature_Showcase-5_cathefriedrich_qbzlnc.mp4", id: "@cathefriedrich", title: "Comfy like sneakers+quality check+stable heels" },
-        { url: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605365/Brief-%20total/feature%20showcase/2_5._Feature_Showcase-6_trendswithbren_mnwfm0.mp4", id: "@trendswithbren", title: "Textured rubber sole for slip resistance" },
-        { url: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605366/Brief-%20total/feature%20showcase/2_5._Feature_Showcase-7_lidiyabairon_yokpuq.mp4", id: "@lidiyabairon", title: "Multi-color choices" },
-        { url: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605367/Brief-%20total/feature%20showcase/2_5._Feature_Showcase-8_kellyn_mcmullan_wz6pph.mp4", id: "@kellyn_mcmullan", title: "Flared heels to prevent getting stuck in cracks" }
+        { url: "https://res.cloudinary.com/dw8q6wrts/video/upload/q_auto/f_auto/v1776248080/3._Feature_Showcase-2_toks_amy_kz7vkk.mp4", id: "@toks_amy", title: "Ergonomic & arch support cushion" }
       ] 
     },
     { 
@@ -213,8 +214,16 @@ export const STRUCTURE_CONTENT = {
     },
     { 
       title: "Feature Showcase", 
-      desc: "Please refer to the cases in 3. Feature Showcase. Beside the features you have mentioned, surprise your audience with “what’s more!”", 
-      examples: [] 
+      desc: "Showcase 1-3 product features that solve the issues you mention in the hook.", 
+      examples: [
+        { url: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605366/Brief-%20total/feature%20showcase/2_5._Feature_Showcase-1_kenzii_04_rjqh7t.mp4", id: "@kenzii_04", title: "Soft and comfy uppers and soles" },
+        { url: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605366/Brief-%20total/feature%20showcase/2_5._Feature_Showcase-3_deliriarose_hlxufs.mp4", id: "@deliriarose", title: "Stable heels for steady steps" },
+        { url: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605366/Brief-%20total/feature%20showcase/2_5._Feature_Showcase-4_emily.e.young_rotdyw.mp4", id: "@emily.e.young", title: "Slingback straps that stay put" },
+        { url: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605367/Brief-%20total/feature%20showcase/2_5._Feature_Showcase-5_cathefriedrich_qbzlnc.mp4", id: "@cathefriedrich", title: "Comfy like sneakers+quality check+stable heels" },
+        { url: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605365/Brief-%20total/feature%20showcase/2_5._Feature_Showcase-6_trendswithbren_mnwfm0.mp4", id: "@trendswithbren", title: "Textured rubber sole for slip resistance" },
+        { url: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605366/Brief-%20total/feature%20showcase/2_5._Feature_Showcase-7_lidiyabairon_yokpuq.mp4", id: "@lidiyabairon", title: "Multi-color choices" },
+        { url: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605367/Brief-%20total/feature%20showcase/2_5._Feature_Showcase-8_kellyn_mcmullan_wz6pph.mp4", id: "@kellyn_mcmullan", title: "Flared heels to prevent getting stuck in cracks" }
+      ] 
     },
     { 
       title: "Call to Action", 

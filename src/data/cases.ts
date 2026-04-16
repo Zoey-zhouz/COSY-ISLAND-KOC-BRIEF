@@ -32,7 +32,7 @@ export const INSPIRATION_CATEGORIES = [
     title: "Editing tutorial",
     desc: "Popular editing tutorials suitable for IG.",
     items: [
-      { id: "@stevenwommack", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772611348/Tutorial-trend_2-stevenwommack__2026-02-23T141032.000Z_lzixuh.mp4", description: "Tutorial trend 2" },
+      { id: "@stevenwommack", videoUrl: "https://res.cloudinary.com/dw8q6wrts/video/upload/v1773024678/Tutorial-trend_2-stevenwommack__2026-02-23T141032.000Z_ztfpif.mp4", description: "Tutorial trend 2" },
       { id: "@stevenwommack", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772611248/Tutorial-ai%E5%B0%8F%E4%BA%BA%E6%8D%A2%E8%A3%85-stevenwommack__2026-01-26T134821.000Z_1_hmlksn.mp4", description: "Tutorial AI outfit change" },
       { id: "@stevenwommack", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772611246/Tutorial-AI_transform_location-stevenwommack__2026-01-28T190058.000Z_vdcjgf.mp4", description: "Tutorial AI transform location" },
       { id: "@stevenwommack", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772611249/Tutorial-split_screen-stevenwommack__2026-01-24T111206.000Z_gfwnln.mp4", description: "Split screen tutorial" },
@@ -49,9 +49,14 @@ export const INSPIRATION_CATEGORIES = [
     ]
   },
   {
-    title: "Multi-Color Showcase",
+    title: "Multicolor case",
     desc: "Excellent cases showcasing multiple colors.",
-    items: []
+    items: [
+      { id: "@tanyakotyakova", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772786164/HOOK_%E5%A4%9A%E8%89%B2_tanyakotyakova__2026-01-20T162420.000Z_spamyo.mp4", description: "Multicolor case 1" },
+      { id: "@sofi.mamchur", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772786409/%E5%A4%9A%E8%89%B2%E6%A1%88%E4%BE%8B1_sofi.mamchur__2026-02-02T180519.000Z_bqky7m.mp4", description: "Multicolor case 2" },
+      { id: "@lidiyabairon", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772786424/_lidiyabairon__2025-12-22T153201.000Z_wbjrhx.mp4", description: "Multicolor case 3" },
+      { id: "@lindsayhignett", videoUrl: "https://res.cloudinary.com/dw8q6wrts/video/upload/v1773390290/HOOK_%E5%A4%9A%E8%89%B2_lindsayhignett__2026-03-06T150204.000Z_by1ql8.mp4", description: "Multicolor case 4" }
+    ]
   }
 ];
 
@@ -80,5 +85,11 @@ export const MULTI_COLOR_CASES = [
     author: "@lidiyabairon",
     description: "Inspiration for your content.",
     videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772786424/_lidiyabairon__2025-12-22T153201.000Z_wbjrhx.mp4"
+  },
+  {
+    title: "Community Case",
+    author: "@lindsayhignett",
+    description: "Inspiration for your content.",
+    videoUrl: "https://res.cloudinary.com/dw8q6wrts/video/upload/v1773390290/HOOK_%E5%A4%9A%E8%89%B2_lindsayhignett__2026-03-06T150204.000Z_by1ql8.mp4"
   }
 ];

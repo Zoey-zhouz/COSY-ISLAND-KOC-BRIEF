@@ -1,12 +1,156 @@
 import { DEFAULT_CASES } from './cases';
 
 export const SINGLE_COLOR_PRODUCTS = [
-  { 
-    id: 'p1', 
-    name: 'Styleflex Pointed Toe Heeled Platform Pumps', 
-    colors: ['Best-selling Black', 'Best-selling Apricot'], 
-    image: 'https://cosyisland.co/cdn/shop/files/AWF03701ABL.gif?v=1770175683&width=1400', 
-    url: 'https://cosyisland.co/products/styleflex-pointed-toe-heeled-platform-pumps?_pos=1&_sid=27340162f&_ss=r', 
+  {
+    id: 'p11',
+    name: 'GraceLithe Pointed Toe Heeled Mule',
+    colors: ['Best-selling Leopard', 'Best-selling Black', 'Best-selling Apricot'],
+    image: 'https://cosyisland.co/cdn/shop/files/6_46cc2beb-1a8a-4d6f-b07c-eec2cc330b99.jpg?v=1769593424&width=1400',
+    url: 'https://cosyisland.co/products/mousse-fit-sexy-pointed-toe-heel-mules',
+    sellingPoints: [
+      '"Easy on, easy off": Slip them on in one second, just slide and go.',
+      '“Multiple colors, endless looks”: Available in over 20 colors. One heel fits all.',
+      '"Stable heels, no wobble": The heel subtly flares out at the base, adding stability while maintaining an elegant silhouette — making it easier to walk confidently, even for heel begginers.',
+      '"Targeted cushioning that reduce pain": The insole is made with high-resilience materials that absorbs impact with every step. It’s strategically thickened at the heel and forefoot for targeted support, effectively reducing pressure on your feet, knees, and lower back.',
+      '"Arch support that lasts": The build-in arch support from the last and insole supports your natural arch — helping reduce fatigue during long hours of standing or walking.'
+    ],
+    detailCases: [
+      { title: "Case 1", author: "@cristinageorgia85", description: "GraceLithe Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605352/Brief-%20total/product-info/2776-1_cristinageorgia85_uskvfg.mp4" },
+      { title: "Case 2", author: "@jesssouthern", description: "GraceLithe Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605351/Brief-%20total/product-info/2776-2_jesssouthern_hfbzha.mp4" },
+      { title: "Case 3", author: "@nanka", description: "GraceLithe Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605353/Brief-%20total/product-info/2776-3_nanka_vd_ilvpwo.mp4" }
+    ]
+  },
+  {
+    id: 'p2',
+    name: 'StrikeStep Elegant Stiletto Heeled Slingback',
+    colors: ['Best-selling Apricot', 'Best-selling MoonNight', 'Best-selling Denim Blue'],
+    image: 'https://cosyisland.co/cdn/shop/files/IMG_00192.jpg?v=1769154612&width=1200',
+    url: 'https://cosyisland.co/products/elegant-stiletto-heeled-slingback',
+    sellingPoints: [
+      '“Multiple colors, endless looks”: Available in over 20 colors. One heel fits all.',
+      '"Slip-resistant rubber outsole": The textured rubber outsole provides superior grip — offering up to 1.5x more slip resistance than traditional leather soles, so you can walk with confidence on any surface.',
+      '"Targeted cushioning that reduce pain": The insole is made with high-resilience materials that absorbs impact with every step. It’s strategically thickened at the heel and forefoot for targeted support, effectively reducing pressure on your feet, knees, and lower back.',
+      '"Stable heels, no wobble": Carefully refined by experienced last makers, the heel shape is designed to follow natural foot alignment — delivering better balance and reducing the risk of ankle strain.'
+    ],
+    detailCases: [
+      { title: "Case 1", author: "@stylebyfabi", description: "StrikeStep Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605357/Brief-%20total/product-info/3485-1_stylebyfabi__2025-05-01T022210.000Z_kzkubv.mp4" },
+      { title: "Case 2", author: "@cristinageorgia85", description: "StrikeStep Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605356/Brief-%20total/product-info/3485-2_cristinageorgia85__2025-04-05T165651.000Z_lax7nd.mp4" },
+      { title: "Case 3", author: "@sartorial_silly", description: "StrikeStep Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605356/Brief-%20total/product-info/3485-3_sartorial_silly__2025-07-08T100504.000Z_dmgubt.mp4" }
+    ]
+  },
+  {
+    id: 'p12',
+    name: 'EverLush Bowknot Pointed Toe Heeled Slingback',
+    colors: ['Best-selling Apricot', 'Best-selling Black', 'Best-selling White'],
+    image: 'https://cosyisland.co/cdn/shop/files/Group2122.jpg?v=1772182680&width=1200',
+    url: 'https://cosyisland.co/products/everlush-bowknot-pointed-toe-heeled-slingback',
+    sellingPoints: [
+      '"Breathable, flexible fabric upper": The fabric upper is more breathable and flexible than leather — allowing your feet to stay cool and comfortable throughout the day.',
+      '“Slingback that stay puts”: The elastic slingback fit just right. Stays on the heel during walking.',
+      '“Multiple colors, endless looks”: Available in over 20 colors. One heel fits all.',
+      '"Stable heels, no wobble": The heel subtly flares out at the base, adding stability while maintaining an elegant silhouette — making it easier to walk confidently, even for heel begginers.'
+    ],
+    detailCases: [
+      { title: "Case 1", author: "@jessica", description: "EverLush Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605353/Brief-%20total/product-info/3487-1_jessica_campolii_xct6fz.mp4" },
+      { title: "Case 2", author: "@stylebyfabi", description: "EverLush Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605353/Brief-%20total/product-info/3487-2_stylebyfabi_hnmvwb.mp4" },
+      { title: "Case 3", author: "@ugc_bysabi", description: "EverLush Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605351/Brief-%20total/product-info/3487-3_tanyakotyakova_ee1ufy.mp4" }
+    ]
+  },
+  {
+    id: 'p14',
+    name: 'SoftBounce Pointed Toe Heeled Slingback',
+    colors: ['Best-selling Black', 'Best-selling Apricot'],
+    image: 'https://cosyisland.co/cdn/shop/files/Group_861_8e24fb4d-483f-4cdb-a25f-0bcb00430ff8.webp?v=1756351474&width=1200',
+    url: 'https://cosyisland.co/products/softbounce-pointed-toe-heeled-slingback',
+    sellingPoints: [
+      '"Breathable, flexible fabric upper": The fabric upper is more breathable and flexible than leather — allowing your feet to stay cool and comfortable throughout the day.',
+      '"Shock absorbing Rubber Pods sole": 2mm raised pods on the soles are engineered to aborb the impact with every step. Reducing pressure on the feet, knees, and lower back. Plus,it gives better grip when walking.',
+      '"Stable heels, no wobble": The heel subtly flares out at the base, adding stability while maintaining an elegant silhouette — making it easier to walk confidently, even for heel begginers.'
+    ],
+    detailCases: [
+      { title: "Case 1", author: "@bren.cloud", description: "SoftBounce Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605356/Brief-%20total/product-info/3710-1_bren.cloud__2025-08-28T074327.000Z_pp0opf.mp4" },
+      { title: "Case 2", author: "@myfashion_jen", description: "SoftBounce Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605355/Brief-%20total/product-info/3710-2_myfashion_jen__2025-11-13T063408.000Z_csdj5g.mp4" },
+      { title: "Case 3", author: "@ugc_bysabi", description: "SoftBounce Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605354/Brief-%20total/product-info/3710-3_ugc_bysabi__2025-09-22T095449.000Z_mykcbn.mp4" }
+    ]
+  },
+  {
+    id: 'p15',
+    name: 'DenimLoft Strapped Platform Heeled Sandal',
+    colors: ['Best-selling Blue'],
+    image: 'https://cosyisland.co/cdn/shop/files/IMG_0594_012262d2-27d4-4018-955b-2cec9add2572.jpg?v=1775098849&width=1200',
+    url: 'https://cosyisland.co/products/denimloft-strapped-platform-heeled-sandal',
+    sellingPoints: [
+      '"Extra height, without extra pain": The platform design adds height while reducing the effective heel drop — giving you the lift of heels with a more comfortable, balanced feel.',
+      '"Targeted cushioning that reduce pain": The insole is made with high-resilience materials that absorbs impact with every step. It’s strategically thickened at the heel and forefoot for targeted support, effectively reducing pressure on your feet, knees, and lower back.',
+      '"Stable heels, no wobble": Carefully refined by experienced last makers, the heel shape is designed to follow natural foot alignment — delivering better balance and reducing the risk of ankle strain.',
+      '"No rubbing straps": The inner lining of the straps uses skin-friendly microfiber suede, reducing friction while adding softness — so you can wear them comfortably without irritation.'
+    ],
+    detailCases: [
+      { title: "Case 1", author: "@cosyisland_official", description: "DenimLoft Showcase", videoUrl: "https://res.cloudinary.com/dw8q6wrts/video/upload/v1776248711/product-_4121-cosyisland_official_2_j0wsb0.mp4" },
+      { title: "Case 2", author: "@cosyisland_official", description: "DenimLoft Showcase", videoUrl: "https://res.cloudinary.com/dw8q6wrts/video/upload/v1776248709/product-_4121-cosyisland_official_3_vuldzm.mp4" },
+      { title: "Case 3", author: "@cosyisland_official", description: "DenimLoft Showcase", videoUrl: "https://res.cloudinary.com/dw8q6wrts/video/upload/v1776248710/product-_4121-cosyisland_official_1_nik0am.mp4" }
+    ]
+  },
+  {
+    id: 'p16',
+    name: 'GlimmerRise Strapped Platform Heeled Sandal',
+    colors: ['Best-selling Black', 'Best-selling Apricot'],
+    image: 'https://cosyisland.co/cdn/shop/files/IMG_0594_abc8628c-b201-40a5-9ded-9eb1eb004b2f.jpg?v=1774952469&width=1200',
+    url: 'https://cosyisland.co/products/glimmerrise-strapped-platform-heeled-sandal-1',
+    sellingPoints: [
+      '"Extra height, without extra pain": The platform design adds height while reducing the effective heel drop — giving you the lift of heels with a more comfortable, balanced feel.',
+      '"Targeted cushioning that reduce pain": The insole is made with high-resilience materials that absorbs impact with every step. It’s strategically thickened at the heel and forefoot for targeted support, effectively reducing pressure on your feet, knees, and lower back.',
+      '"Stable heels, no wobble": Carefully refined by experienced last makers, the heel shape is designed to follow natural foot alignment — delivering better balance and reducing the risk of ankle strain.',
+      '"No rubbing at the front": The front lining is crafted with soft microfiber suede to minimize friction against your toes — helping prevent discomfort and blisters.'
+    ],
+    detailCases: [
+      { title: "Case 1", author: "@cosyisland_official", description: "GlimmerRise Showcase", videoUrl: "https://res.cloudinary.com/dw8q6wrts/video/upload/v1776249047/product-_4122_cosyisland_officia_1_cdvpgl.mp4" },
+      { title: "Case 2", author: "@cosyisland_official", description: "GlimmerRise Showcase", videoUrl: "https://res.cloudinary.com/dw8q6wrts/video/upload/v1776249045/product-_4122_cosyisland_officia_2_rfhucq.mp4" },
+      { title: "Case 3", author: "@cosyisland_official", description: "GlimmerRise Showcase", videoUrl: "https://res.cloudinary.com/dw8q6wrts/video/upload/v1776249046/product-_4122_cosyisland_officia_3_ce0zqt.mp4" }
+    ]
+  },
+  {
+    id: 'p17',
+    name: 'SteadyWeave Block Heeled Double Strap Sandal',
+    colors: ['Best-selling Apricot'],
+    image: 'https://cosyisland.co/cdn/shop/files/IMG_0594_c6e8d753-478c-4cc3-810a-9b6e8d452cc3.jpg?v=1774422859&width=1200',
+    url: 'https://cosyisland.co/products/steadyweave-round-toe-block-heeled-sandal',
+    sellingPoints: [
+      '"No rubbing at the back": Extra anti-friction padding at the heel helps prevent rubbing from day one — so you can wear them comfortably right out of the box.',
+      '"Chunky, no wobble": The wider heel design provides extra support and reduces pressure on your feet — helping you stay comfortable and steady, even after hours of walking.',
+      '"No rubbing straps": The inner lining of the straps uses skin-friendly microfiber suede, reducing friction while adding softness — so you can wear them comfortably without irritation.',
+      '"Arch support that lasts": The build-in arch support from the last and insole supports your natural arch — helping reduce fatigue during long hours of standing or walking.'
+    ],
+    detailCases: [
+      { title: "Case 1", author: "@mariakivela", description: "SteadyWeave Showcase", videoUrl: "https://res.cloudinary.com/dw8q6wrts/video/upload/v1776324425/Product-4117_cosyisland_official_1_oi96ol.mp4" },
+      { title: "Case 2", author: "@cosyisland_official", description: "SteadyWeave Showcase", videoUrl: "https://res.cloudinary.com/dw8q6wrts/video/upload/v1776324425/Product-4117_cosyisland_official_2_qik04k.mp4" },
+      { title: "Case 3", author: "@cosyisland_official", description: "SteadyWeave Showcase", videoUrl: "https://res.cloudinary.com/dw8q6wrts/video/upload/v1776324425/Product-4117_cosyisland_official_3_afof71.mp4" }
+    ]
+  },
+  {
+    id: 'p18',
+    name: 'GraceWeave Pointed Toe Stiletto Heeled Slingback',
+    colors: ['Best-selling Denim Blue'],
+    image: 'https://cosyisland.co/cdn/shop/files/Group861_0ad107ef-1433-4fc5-b0bd-4b2c1cecf85e.webp?v=1773210682&width=1200',
+    url: 'https://cosyisland.co/products/graceweave-pointed-toe-stiletto-heeled-slingback',
+    sellingPoints: [
+      '"Breathable, flexible fabric upper": The fabric upper is more breathable and flexible than leather — allowing your feet to stay cool and comfortable throughout the day.',
+      '“Slingback that stay puts”: The elastic slingback fit just right. Stays on the heel during walking.',
+      '"Targeted cushioning that reduce pain": The insole is made with high-resilience materials that absorbs impact with every step. It’s strategically thickened at the heel and forefoot for targeted support, effectively reducing pressure on your feet, knees, and lower back.',
+      '"Stable heels, no wobble": Carefully refined by experienced last makers, the heel shape is designed to follow natural foot alignment — delivering better balance and reducing the risk of ankle strain.'
+    ],
+    detailCases: [
+      { title: "Case 1", author: "@cosyisland_official", description: "GraceWeave Showcase", videoUrl: "https://res.cloudinary.com/dw8q6wrts/video/upload/v1776324797/Product-4069_cosyisland_official_1_nshwgl.mp4" },
+      { title: "Case 2", author: "@cosyisland_official", description: "GraceWeave Showcase", videoUrl: "https://res.cloudinary.com/dw8q6wrts/video/upload/v1776324792/Product-4069_cosyisland_official_2_bfnrzh.mp4" },
+      { title: "Case 3", author: "@cosyisland_official", description: "GraceWeave Showcase", videoUrl: "https://res.cloudinary.com/dw8q6wrts/video/upload/v1776324783/Product-4069_cosyisland_official_3_uqrzaj.mp4" }
+    ]
+  },
+  {
+    id: 'p1',
+    name: 'StyleFlex Pointed Toe Heeled Platform Pumps',
+    colors: ['Best-selling Black', 'Best-selling Apricot'],
+    image: 'https://cosyisland.co/cdn/shop/files/AWF03701ABL.gif?v=1770175683&width=1400',
+    url: 'https://cosyisland.co/products/styleflex-pointed-toe-heeled-platform-pumps?_pos=1&_sid=27340162f&_ss=r',
     sellingPoints: [
       'Please make sure to highlight the bare shoe (without the strap) as the main focal point.',
       'Platform that balances height & comfort: 4.3 inches/11cm - height designed with steady heels and platform. Add height without hurting. Strike with confidence.',
@@ -17,23 +161,6 @@ export const SINGLE_COLOR_PRODUCTS = [
       { title: "Case 1", author: "@mbcoss", description: "Styleflex Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605361/Brief-%20total/product-info/3701-1-mbcoss__2025-08-28T095908.000Z_t535hs.mp4" },
       { title: "Case 2", author: "@ivannaplcs", description: "Styleflex Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605361/Brief-%20total/product-info/3701-2-ivannaplcs__2025-12-16T074616.000Z_en3i8c.mp4" },
       { title: "Case 3", author: "@vm_prostylist", description: "Styleflex Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605361/Brief-%20total/product-info/3701-3-vm_prostylist__2026-02-27T074417.000Z_jvk44q.mp4" }
-    ]
-  },
-  {
-    id: 'p2',
-    name: 'StrikeStep Elegant Stiletto Heeled Slingback',
-    colors: ['Best-selling Apricot', 'Best-selling Denim Blue'],
-    image: 'https://cosyisland.co/cdn/shop/files/IMG_00192.jpg?v=1769154612&width=1200',
-    url: 'https://cosyisland.co/products/elegant-stiletto-heeled-slingback?pr_prod_strat=pinned&pr_rec_id=038ff1bfe&pr_rec_pid=14647281254767&pr_ref_pid=14647280861551&pr_seq=uniform&variant=52357068095855',
-    sellingPoints: [
-      'No heel rubbing: The elastic slingback strap is soft and gentle on your skin, so it stays in place without rubbing or digging into your heel, perfect for all day wear.',
-      'Soft upper, cushy cushion: The elastic upper relieves bunion pressure and adapts to your foot, while the cushioned insole supports key pressure points for lasting comfort (ball, arch & heel).',
-      'Chic color blocking design: The bold yet minimalist color blocking gives this heel a modern and elegant look that pairs effortlessly with everything from jeans to dresses. Perfect for business-casual events.'
-    ],
-    detailCases: [
-      { title: "Case 1", author: "@stylebyfabi", description: "StrikeStep Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605357/Brief-%20total/product-info/3485-1_stylebyfabi__2025-05-01T022210.000Z_kzkubv.mp4" },
-      { title: "Case 2", author: "@cristinageorgia85", description: "StrikeStep Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605356/Brief-%20total/product-info/3485-2_cristinageorgia85__2025-04-05T165651.000Z_lax7nd.mp4" },
-      { title: "Case 3", author: "@sartorial_silly", description: "StrikeStep Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605356/Brief-%20total/product-info/3485-3_sartorial_silly__2025-07-08T100504.000Z_dmgubt.mp4" }
     ]
   },
   {
@@ -96,7 +223,7 @@ export const SINGLE_COLOR_PRODUCTS = [
     image: 'https://cosyisland.co/cdn/shop/files/Group_861.webp?v=1772247029&width=1200',
     url: 'https://cosyisland.co/products/softbounce-pointed-toe-stiletto-heeled-pumps?_pos=1&_sid=996d97492&_ss=r',
     sellingPoints: [
-      'Please prioritize the first key selling point and show the rubber pods on the sole.',
+      'Please prioritize the first key selling point and show the rubber pods on the sole. This product has received many positive reviews, you can also reference customer reviews on our website to highlight the benefits.',
       'Rubber Pods with every step: The sole is designed with soft, bean-shaped rubber capsules. Each 2mm capsule flexes naturally as you walk, helping absorb impact more effectively than traditional high heels.',
       'Extra-soft rubber sole with real bounce: Made with softer 55 Shore rubber, the outsole feels more flexible than typical heels. The thicker sole and evenly placed capsules absorb shock while still offering a comfortable rebound and solid support.',
       'Stable 8cm heel that’s easy to walk in: The 8cm heel height is easy to manage, and the slightly flared heel base adds stability. It helps distribute weight evenly, making these heels comfortable for long wear.'
@@ -114,7 +241,7 @@ export const SINGLE_COLOR_PRODUCTS = [
     image: 'https://cosyisland.co/cdn/shop/files/379a815579223c0a1217f5e23f1a85ae_ac191a2c-1d5f-4185-af64-3d73f1317acc.gif?v=1770279619&width=1200',
     url: 'https://cosyisland.co/products/powerwalk-peep-toe-heeled-pumps?_pos=1&_sid=841fb9c08&_ss=r',
     sellingPoints: [
-      'Note: Please do not show the straps in the video.',
+      'Please prioritize showcasing the style without the strap first, then demonstrate the look with the strap attached.',
       'Cloud-like Comfort: Soft knit upper wraps your feet without squeezing. Breathable and flexible, while the open front design gives your toes extra room.',
       'Tall but Stable: 11cm heels that feel steady and secure. Widened heel base improves balance and support.',
       'Hidden Pressure Relief: Built-in platform reduces forefoot pressure. Elegant look of high heels with noticeably better comfort.',
@@ -150,10 +277,10 @@ export const SINGLE_COLOR_PRODUCTS = [
     image: 'https://cosyisland.co/cdn/shop/files/4080AKH.jpg?v=1769592768&width=1200',
     url: 'https://cosyisland.co/products/embrodance-elegant-stiletto-heeled-slingback?_pos=1&_sid=f23cc0f05&_ss=r',
     sellingPoints: [
-      '1. Secure slingback strap: Elastic slingback stays in place and won’t slip off or rub your heels while walking.',
-      '2. All-day breathable comfort: Breathable fly-woven upper plus a cushioned insole with arch support keep your feet comfortable all day.',
-      '3. Stable steps, confident stride: Flared heel and slip-resistant outsole provide stability and help you walk safely and confidently.',
-      '4. Effortlessly refined elegance: Easy to dress up or down for dates, parties, weddings, or everyday looks. No need to sacrifice comfort for style.'
+      'Secure slingback strap: Elastic slingback stays in place and won’t slip off or rub your heels while walking.',
+      'All-day breathable comfort: Breathable fly-woven upper plus a cushioned insole with arch support keep your feet comfortable all day.',
+      'Stable steps, confident stride: Flared heel and slip-resistant outsole provide stability and help you walk safely and confidently.',
+      'Effortlessly refined elegance: Easy to dress up or down for dates, parties, weddings, or everyday looks. No need to sacrifice comfort for style.'
     ],
     detailCases: [
       { title: "Case 1", author: "@cosyisland_official", description: "EmbroDance Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605356/Brief-%20total/product-info/4080-1_cosyisland_official__2026-01-15T092911.000Z_wxjzqf.mp4" },
@@ -168,51 +295,16 @@ export const SINGLE_COLOR_PRODUCTS = [
     image: 'https://cosyisland.co/cdn/shop/files/2_f875394c-09ea-4ad8-985b-83e1d12790f2.jpg?v=1756887730&width=1200',
     url: 'https://cosyisland.co/products/elegant-pointed-toe-heeled-pumps-6?_pos=1&_sid=2baceb052&_ss=r',
     sellingPoints: [
-      '1. Sturdy heels with adjustable fit: The flared-out base gives you extra balance, and adjustable straps ensure a perfect fit. It’s the "sweet spot" height for all-day walking.',
-      '2. Super stretchy—bunion & wide-foot friendly: The flexible fabric expands to your foot shape without any painful squeezing. It’s a total game-changer for wide feet and bunions.',
-      '3. Breathable knit—no more sweaty feet: This ultra-soft material allows for maximum airflow. It keeps your feet cool, dry, and comfortable from morning till night.',
-      '4. Seamless knit. Zero break-in required: No rough edges or stiff seams to rub your skin. These feel incredibly soft from the first wear—say goodbye to blisters and Band-Aids.'
+      'Please prioritize showcasing the style without the strap first, then demonstrate the look with the strap attached.',
+      'Sturdy heels with adjustable fit: The flared-out base gives you extra balance, and adjustable straps ensure a perfect fit. It’s the "sweet spot" height for all-day walking.',
+      'Super stretchy—bunion & wide-foot friendly: The flexible fabric expands to your foot shape without any painful squeezing. It’s a total game-changer for wide feet and bunions.',
+      'Breathable knit—no more sweaty feet: This ultra-soft material allows for maximum airflow. It keeps your feet cool, dry, and comfortable from morning till night.',
+      'Seamless knit. Zero break-in required: No rough edges or stiff seams to rub your skin. These feel incredibly soft from the first wear—say goodbye to blisters and Band-Aids.'
     ],
     detailCases: [
       { title: "Case 1", author: "@cosyisland_official", description: "EternalPace Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605354/Brief-%20total/product-info/3392-1_cristinageorgia85__2026-01-21T100224.000Z_o8irmr.mp4" },
       { title: "Case 2", author: "@cosyisland_official", description: "EternalPace Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605354/Brief-%20total/product-info/3392-2_classroom.runway__2025-01-15T090749.000Z_tb2rwo.mp4" },
       { title: "Case 3", author: "@cosyisland_official", description: "EternalPace Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605353/Brief-%20total/product-info/3392-3_cosyisland_official__2025-08-29T075120.000Z_bp0w1v.mp4" }
-    ]
-  },
-  {
-    id: 'p11',
-    name: 'GraceLithe Pointed Toe Heeled Mules',
-    colors: ['Best-selling Leopard', 'Best-selling Black', 'Best-selling Apricot'],
-    image: 'https://cosyisland.co/cdn/shop/files/6_46cc2beb-1a8a-4d6f-b07c-eec2cc330b99.jpg?v=1769593424&width=1400',
-    url: 'https://cosyisland.co/products/gracelithe-pointed-toe-heeled-mules-4?_pos=1&_sid=8fbfa74a0&_ss=r',
-    sellingPoints: [
-      '5-star rated comfort: Best-seller of Cosy Island. Over 40,000 woman’s comfort choice.',
-      'Skin-friendly fabrics & cushioned support: Fabric material reduces pressure on bunion area. Arch support and rebounding cushion effectively relieve fatigue.',
-      'Easy on, easy off: Slip them on in seconds, just slide and go.',
-      'Multiple colors, endless looks: Available in over 20 colors and several models.'
-    ],
-    detailCases: [
-      { title: "Case 1", author: "@cristinageorgia85", description: "GraceLithe Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605352/Brief-%20total/product-info/2776-1_cristinageorgia85_uskvfg.mp4" },
-      { title: "Case 2", author: "@jesssouthern", description: "GraceLithe Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605351/Brief-%20total/product-info/2776-2_jesssouthern_hfbzha.mp4" },
-      { title: "Case 3", author: "@nanka", description: "GraceLithe Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605353/Brief-%20total/product-info/2776-3_nanka_vd_ilvpwo.mp4" }
-    ]
-  },
-  {
-    id: 'p12',
-    name: 'EverLush Bowknot Pointed Toe Heeled Slingback',
-    colors: ['Best-selling Apricot', 'Best-selling Black', 'Best-selling White'],
-    image: 'https://cosyisland.co/cdn/shop/files/Group2122.jpg?v=1772182680&width=1200',
-    url: 'https://cosyisland.co/products/trendy-pointed-toe-heeled-slingback?_pos=1&_sid=3a157870e&_ss=r', 
-    sellingPoints: [
-      'Soft upper, cushy feel: The upper is soft and flexible, and the cushioned insole helps relieve pressure.',
-      'Slingback that stay puts: The slingback strap is elastic, and won’t slip off your heels during walking.',
-      'Stable heels, comfy stride: The curved heel adds elegance; the flared out end provides extra stability.',
-      'Multiple colors, endless looks: Available in over 10 colors and 2 models.'
-    ],
-    detailCases: [
-      { title: "Case 1", author: "@jessica", description: "EverLush Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605353/Brief-%20total/product-info/3487-1_jessica_campolii_xct6fz.mp4" },
-      { title: "Case 2", author: "@stylebyfabi", description: "EverLush Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605353/Brief-%20total/product-info/3487-2_stylebyfabi_hnmvwb.mp4" },
-      { title: "Case 3", author: "@ugc_bysabi", description: "EverLush Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605351/Brief-%20total/product-info/3487-3_tanyakotyakova_ee1ufy.mp4" }
     ]
   },
   {
@@ -222,32 +314,14 @@ export const SINGLE_COLOR_PRODUCTS = [
     image: 'https://cosyisland.co/cdn/shop/files/3809_f130497a-557c-45fd-8e8a-714bebfeb9b7.webp?v=1769592505&width=1400',
     url: 'https://cosyisland.co/products/bicolor-strapped-pointed-toe-stiletto-pumps?_pos=1&_sid=e27c78a77&_ss=r',
     sellingPoints: [
-      'Breathable and all-day comfort: Soft knit upper and cushioned insole make these super comfy to wear all day.',
+      'Breathable and all-day comfort: Soft knit upper and cushioned insole make these super comfy to wear all day, effectively taking pressure off your knees and lower back.',
       'Easy to style, suitable for any occasion: Perfect for both work and dates. Transition seamlessly from day to night.',
-      'Effortless chic and elegance: Color-blocked design brings a stylish autumn vibe, while the pointed toe visually lengthens legs.'
+      'Effortless chic and elegance: Color-blocked design brings a stylish autumn vibe, while the pointed toe design visually lengthens the legs.'
     ],
     detailCases: [
       { title: "Case 1", author: "@cristinageorgia85", description: "Bicolor Strapped Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605365/Brief-%20total/product-info/3809-1_cristinageorgia85__2026-02-06T074628.000Z_tfgfzd.mp4" },
       { title: "Case 2", author: "@cosyisland_official", description: "Bicolor Strapped Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605363/Brief-%20total/product-info/3809-2_cosyisland_official__2025-08-29T064807.000Z_ghps6p.mp4" },
       { title: "Case 3", author: "@cosyisland_official", description: "Bicolor Strapped Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605363/Brief-%20total/product-info/3809-3_cosyisland_official__2025-07-17T034503.000Z_fllwdu.mp4" }
-    ]
-  },
-  {
-    id: 'p14',
-    name: 'Spotlight Strapped Stiletto Pumps',
-    colors: ['Best-selling Black', 'Best-selling Apricot'],
-    image: 'https://cosyisland.co/cdn/shop/files/IMG_0039_1.jpg?v=1769154489&width=1200',
-    url: 'https://cosyisland.co/products/sexy-strapped-stiletto-pumps?_pos=1&_sid=b2aabd793&_ss=r',
-    sellingPoints: [
-      '1. High yet stable——10.5cm high, still steady: These heels are 10.5cm high, but designed for ultimate stability. The thick platform reduces pressure from the height, giving extra balance and support.',
-      '2. Flexible toe for easy walking——Natural bend, easy steps: The toe area is curved 10–15 degrees to fit the natural shape of your foot, reducing friction while providing support for effortless walking.',
-      '3. Soft cushion pillow——Soft edges, no rubbing: Soft cushions are added to the collar where friction usually occurs, keeping the edges gentle and reducing rubbing for all-day comfort.',
-      '4. Comfortable breathable material——Breathable & stretchy: Made from breathable material with about 20% stretch, this enhances comfort and airflow, keeping your feet feeling fresh and relaxed all day.'
-    ],
-    detailCases: [
-      { title: "Case 1", author: "@cristinageorgia85", description: "Spotlight Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605360/Brief-%20total/product-info/3498-1-cristinageorgia85__2025-01-20T035545.000Z_fmmuyt.mp4" },
-      { title: "Case 2", author: "@cosyisland_official", description: "Spotlight Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605360/Brief-%20total/product-info/3498-2-cosyisland_official__2025-03-07T025456.000Z_lo0ugt.mp4" },
-      { title: "Case 3", author: "@the.christina.edit", description: "Spotlight Showcase", videoUrl: "https://res.cloudinary.com/dqdisi2yp/video/upload/v1772605358/Brief-%20total/product-info/3498-3-the.christina.edit__2026-02-11T232530.000Z_1_ffrvir.mp4" }
     ]
   }
 ];

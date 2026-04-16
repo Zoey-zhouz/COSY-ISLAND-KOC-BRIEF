@@ -189,13 +189,15 @@ const SectionStructure: React.FC<SectionStructureProps> = ({ data, labels, platf
               <div key={idx} className="space-y-12">
                 <div className="bg-brand-beige/20 p-8 md:p-12 border border-brand-primary/5 rounded-2xl flex flex-col md:flex-row gap-8 md:gap-12 items-center">
                   <div className="flex-1 space-y-6">
-                    <div className="w-16 h-16 bg-brand-primary text-white flex items-center justify-center rounded-2xl shadow-xl">
-                      <i className={`fas ${type.icon} text-2xl`}></i>
-                    </div>
+                    {type.icon && (
+                      <div className="w-16 h-16 bg-brand-primary text-white flex items-center justify-center rounded-2xl shadow-xl">
+                        <i className={`fas ${type.icon} text-2xl`}></i>
+                      </div>
+                    )}
                     <div className="flex flex-col">
                       <h4 className="text-3xl font-serif text-brand-primary tracking-tight">{type.title}</h4>
                     </div>
-                    <p className="text-slate-600 text-lg italic leading-relaxed">{type.desc}</p>
+                    <p className="text-slate-600 text-lg italic leading-relaxed whitespace-pre-line">{type.desc}</p>
                     {type.examples && (
                       <div className="space-y-3 bg-white/50 p-6 rounded-xl border border-brand-primary/5">
                         <h5 className="text-[10px] font-black uppercase tracking-widest text-brand-secondary">Examples</h5>
@@ -248,8 +250,15 @@ const SectionStructure: React.FC<SectionStructureProps> = ({ data, labels, platf
                   {idx + 1}
                 </span>
                 <div>
-                  <h3 className="text-2xl md:text-4xl font-serif text-brand-primary tracking-tight mb-1 md:mb-2">{step.title}</h3>
-                  <p className="text-slate-500 text-sm md:text-xl italic font-light">{step.desc}</p>
+                  <h3 className="text-2xl md:text-4xl font-serif text-brand-primary tracking-tight mb-1 md:mb-2">
+                    {step.title}
+                    {step.title.includes("Feature Showcase") && (
+                      <span className="ml-4 text-[10px] bg-brand-secondary text-white px-2 py-1 rounded uppercase tracking-widest align-middle inline-block">
+                        Must-Have
+                      </span>
+                    )}
+                  </h3>
+                  <p className="text-slate-500 text-sm md:text-xl italic font-light whitespace-pre-line">{step.desc}</p>
                 </div>
               </div>
               <i className={`fas fa-chevron-${activeStep === idx ? 'up' : 'down'} text-brand-secondary text-xl md:text-2xl transition-all`}></i>
@@ -301,7 +310,7 @@ const SectionStructure: React.FC<SectionStructureProps> = ({ data, labels, platf
                         <div key={mIdx} className="space-y-6">
                           <div className="border-l-4 border-brand-secondary pl-6">
                             <h4 className="text-2xl font-serif text-brand-primary mb-2">{mType.title}</h4>
-                            <p className="text-slate-600 italic">{mType.desc}</p>
+                            <p className="text-slate-600 italic whitespace-pre-line">{mType.desc}</p>
                           </div>
                           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                             {mType.examples.map((ex: any, i: number) => {

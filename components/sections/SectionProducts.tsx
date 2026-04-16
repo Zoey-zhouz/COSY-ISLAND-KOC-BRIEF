@@ -93,21 +93,60 @@ const SectionProducts: React.FC<SectionProductsProps> = ({ products, isMultiColo
         <p className="text-brand-primary text-[10px] md:text-xs font-bold uppercase tracking-widest mb-6">In this section: Explore our seasonal collection and key product selling points.</p>
         <h1 className="text-6xl md:text-8xl font-serif text-brand-primary tracking-tighter leading-none mb-4">{labels.choice}</h1>
         <p className="text-slate-500 text-lg md:text-xl italic font-light">{labels.productHighlight}</p>
+        <p className="text-slate-500 text-sm md:text-base mt-2">You can learn more in product landing page of official website.</p>
       </div>
 
       <div className="mb-20">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-10">
-          {currentMonth.map(p => (
-            <ProductCard 
-              key={p.id} 
-              product={p} 
-              onSelect={handleProductSelect} 
-            />
-          ))}
-        </div>
+        {platform === 'IG' ? (
+          <div className="space-y-20">
+            {/* Q2 Summer - Top */}
+            <div>
+              <div className="flex items-center gap-4 mb-8">
+                <h2 className="text-2xl md:text-4xl font-serif text-brand-primary tracking-tight">2026Q2 - Summer</h2>
+                <div className="h-px flex-grow bg-brand-primary/10"></div>
+              </div>
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-10">
+                {products.filter(p => p.name.toLowerCase().includes('mule') || p.name.toLowerCase().includes('slingback') || p.name.toLowerCase().includes('sandal')).map(p => (
+                  <ProductCard 
+                    key={p.id} 
+                    product={p} 
+                    onSelect={handleProductSelect} 
+                  />
+                ))}
+              </div>
+            </div>
+
+            {/* Q1 Spring - Bottom */}
+            <div>
+              <div className="flex items-center gap-4 mb-8">
+                <h2 className="text-2xl md:text-4xl font-serif text-brand-primary tracking-tight">2026Q1 - Spring</h2>
+                <div className="h-px flex-grow bg-brand-primary/10"></div>
+              </div>
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-10">
+                {products.filter(p => p.name.toLowerCase().includes('pump')).map(p => (
+                  <ProductCard 
+                    key={p.id} 
+                    product={p} 
+                    onSelect={handleProductSelect} 
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        ) : (
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-10">
+            {currentMonth.map(p => (
+              <ProductCard 
+                key={p.id} 
+                product={p} 
+                onSelect={handleProductSelect} 
+              />
+            ))}
+          </div>
+        )}
       </div>
 
-      {pastSelections.length > 0 && (
+      {platform !== 'IG' && pastSelections.length > 0 && (
         <div className="mb-20">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-10">
             {pastSelections.map(p => (

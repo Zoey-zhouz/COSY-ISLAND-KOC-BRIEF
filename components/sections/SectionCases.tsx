@@ -27,14 +27,7 @@ const SectionCases: React.FC<SectionCasesProps> = ({ data, labels, platform, isO
 
   const categories = platform === 'YT' 
     ? YT_INSPIRATION_CATEGORIES 
-    : [
-        ...INSPIRATION_CATEGORIES.filter(c => c.title !== "Multi-Color Showcase"),
-        ...(data.intro.toLowerCase().includes('multi-color') ? [{
-          title: "Multi-Color Showcase",
-          desc: "Excellent cases showcasing multiple colors.",
-          items: data.items.map(item => ({ id: item.author, videoUrl: item.videoUrl, description: item.description }))
-        }] : [])
-      ];
+    : INSPIRATION_CATEGORIES;
 
   const renderYTCase = (item: any) => (
     <div className="bg-brand-beige/20 p-8 md:p-12 border border-brand-primary/5 flex flex-col md:flex-row gap-12 items-center">

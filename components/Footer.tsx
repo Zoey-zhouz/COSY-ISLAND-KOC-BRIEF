@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-12">
           <div className="space-y-6">
             <h3 className="text-brand-secondary font-black uppercase tracking-[0.4em] text-[10px] md:text-xs">
-              Thank you for your attention!
+              Thank you for your attention.
             </h3>
             <h2 className="text-4xl md:text-7xl font-serif tracking-tighter leading-none">
               Cosy is landing.

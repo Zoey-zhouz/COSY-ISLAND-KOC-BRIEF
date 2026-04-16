@@ -37,7 +37,7 @@ const SectionBrand: React.FC<SectionBrandProps> = ({ labels, isOnboarding, onBac
           </div>
           <div className="relative order-1 lg:order-2">
             <div className="relative p-4 md:p-6 bg-brand-white rounded-none shadow-2xl border border-brand-primary/5">
-                <img src="https://cosyisland.co/cdn/shop/files/Group_9089.png?v=1769741562&width=2000" className="rounded-none w-full" alt="Brand Mission" referrerPolicy="no-referrer" />
+                <img src="https://res.cloudinary.com/dw8q6wrts/image/upload/v1773122286/121501544_t3no4h.jpg" className="rounded-none w-full" alt="Brand Mission" referrerPolicy="no-referrer" />
             </div>
           </div>
         </div>

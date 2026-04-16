@@ -13,11 +13,9 @@ const Header: React.FC<HeaderProps> = ({ season, onSeasonChange, onHome }) => {
       <div className="max-w-7xl mx-auto px-6 md:px-12 h-24 flex items-center justify-between">
         <div 
           onClick={onHome}
-          className="cursor-pointer group flex items-center gap-4"
+          className="cursor-pointer group flex items-center"
         >
-          <div className="text-3xl font-black font-brand text-brand-primary tracking-tighter group-hover:text-brand-secondary transition-colors">
-            COSY ISLAND
-          </div>
+          <img src="https://res.cloudinary.com/dw8q6wrts/image/upload/v1773024489/Brand_name_only_tdzfkz.png" alt="COSY ISLAND Logo" className="h-6 md:h-8 object-contain" />
         </div>
 
         <div className="flex items-center gap-6">
